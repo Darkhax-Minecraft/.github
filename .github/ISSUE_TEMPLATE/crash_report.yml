@@ -11,6 +11,9 @@ body:
       description: Please keep in mind that these mods are provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response. Support may be denied if you are being rude, impatient, or demanding.
       options:
         - label: I acknowledge this and agree.
+    validations:
+      required: true
+
   - type: input
     id: minecraft_version
     attributes:
@@ -19,6 +22,7 @@ body:
       placeholder: "Example: 1.18.2"
     validations:
       required: true
+      
   - type: input
     id: mod_version
     attributes:
@@ -27,7 +31,8 @@ body:
       placeholder: "Example: 1.0.2"
     validations:
       required: true
-  - type: dropdown
+      
+  - type: checkboxes
     id: mod_loader
     attributes:
       label: Mod Loaders
@@ -41,6 +46,7 @@ body:
         - Other / Don't Know
     validations:
       required: true
+      
   - type: textarea
     id: issue_description
     attributes:
@@ -48,6 +54,7 @@ body:
       description: "Please describe what happened leading up to the crash. For example if the game crashed after right clicking an item please mention that."
     validations:
       required: true
+      
   - type: textarea
     id: crash_log
     attributes:
