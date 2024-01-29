@@ -46,5 +46,5 @@ body:
     attributes:
       label: Issue Description
       description: "Please describe the issue you are experiencing. Any information that could help resolve the issue should also be included. For example a list of steps to recreate your issue can be very useful to narrow down and resolve your issue."
-    validation:
+    validations:
       required: true
