@@ -8,7 +8,7 @@ body:
     id: acknowledgement
     attributes:
       label: Before you open an issue!
-      description: Please keep in mind that these mods are provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response to your request. Support may be denied if you are being pushy, impatient, or demanding.
+      description: Please keep in mind that these mods are provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response to your request. Support may be denied if you are being rude, impatient, or demanding.
       options:
         - label: I acknowledge this and agree.
   - type: input
