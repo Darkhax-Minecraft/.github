@@ -22,7 +22,7 @@ body:
       placeholder: "Example: 1.18.2"
     validations:
       required: true
-      
+
   - type: input
     id: mod_version
     attributes:
@@ -31,22 +31,21 @@ body:
       placeholder: "Example: 1.0.2"
     validations:
       required: true
-      
+
   - type: checkboxes
     id: mod_loader
     attributes:
       label: Mod Loaders
       description: What mod loader are you using?
-      multiple: true
       options:
-        - Forge
-        - NeoForge
-        - Fabric
-        - Quilt
-        - Other / Don't Know
+        - label: Forge
+        - label: NeoForge
+        - label: Fabric
+        - label: Quilt
+        - label: Other / Don't Know
     validations:
       required: true
-      
+
   - type: textarea
     id: issue_description
     attributes:
@@ -54,7 +53,7 @@ body:
       description: "Please describe what happened leading up to the crash. For example if the game crashed after right clicking an item please mention that."
     validations:
       required: true
-      
+
   - type: textarea
     id: crash_log
     attributes:
