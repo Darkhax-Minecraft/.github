@@ -16,7 +16,7 @@ body:
     attributes:
       label: Minecraft Versions Affected
       description: "What version of Minecraft are you using? If more than one version is affected you can separate them with commas."
-      placeholder: "Example: 1.16.5, 1.18.2, 1.19.2, 1.20.4"
+      placeholder: "Example: 1.16.5, 1.18.2"
     validations:
       required: true
   - type: input
@@ -45,6 +45,6 @@ body:
     id: issue_description
     attributes:
       label: Issue Description
-      description: "Please describe the issue you are experiencing. Any information that could help resolve the issue should also be included. For example a list of steps to recreate your issue can be very useful to narrow down and resolve your issue."
+      description: "Please describe the issue you are experiencing. If possible including a step by step guide that can be used to recreate your issue."
     validations:
       required: true
