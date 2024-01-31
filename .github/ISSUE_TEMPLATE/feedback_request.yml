@@ -6,7 +6,7 @@ labels: ["enhancement"]
 body:
 
   - type: markdown
-    label: introduction
+    id: introduction
     attributes:
       value: "Thank you for taking the time to share your feedback with us. While we do appreciate your feedback please keep in mind that not all feedback can be implemented. This project is also provided for free so it may take days or even weeks to respond to your feedback."
 
