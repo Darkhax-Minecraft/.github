@@ -6,7 +6,7 @@ labels: ["bug"]
 body:
 
   - type: markdown
-    label: introduction
+    id: introduction
     attributes:
       value: "Thank you for taking the time to report this issue. Before you submit this we ask you make a reasonable effort to check if someone else has already submitted the same issue. Additionally, please keep in mind that this project is provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response. Support may be denied if you are being rude, impatient, or demanding."
 
