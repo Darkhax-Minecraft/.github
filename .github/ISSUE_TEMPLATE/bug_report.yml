@@ -1,50 +1,64 @@
-name: 🐞 Bug Report
-description: Let us know about a bug or crash so we can fix it.
+name: "🐞 Bug Report"
+description: "Let us know about a bug so we can fix it."
 title: "[BUG] <title>"
 labels: ["bug"]
 
 body:
-  - type: checkboxes
-    id: acknowledgement
+
+  - type: markdown
+    label: introduction
     attributes:
-      label: Before you open an issue!
-      description: Please keep in mind that these mods are provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response to your request. Support may be denied if you are being rude, impatient, or demanding.
-      options:
-        - label: I acknowledge this and agree.
+      value: "Thank you for taking the time to report this issue. Before you submit this we ask you make a reasonable effort to check if someone else has already submitted the same issue. Additionally, please keep in mind that this project is provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response. Support may be denied if you are being rude, impatient, or demanding."
+
   - type: input
     id: minecraft_version
     attributes:
-      label: Minecraft Versions Affected
-      description: "What version of Minecraft are you using? If more than one version is affected you can separate them with commas."
-      placeholder: "Example: 1.16.5, 1.18.2"
+      label: "Minecraft Version"
+      description: "What version of Minecraft are you using?"
+      placeholder: "Example: 1.18.2"
     validations:
       required: true
+
   - type: input
     id: mod_version
     attributes:
-      label: Mod Version
+      label: "Mod Version"
       description: "What version of the mod are you using?"
       placeholder: "Example: 1.0.2"
     validations:
       required: true
-  - type: dropdown
+
+  - type: checkboxes
     id: mod_loader
     attributes:
-      label: Mod Loaders
-      description: What mod loader are you using?
-      multiple: true
+      label: "Mod Loaders"
+      description: "What mod loader are you using?"
       options:
-        - Forge
-        - NeoForge
-        - Fabric
-        - Quilt
-        - Other / Don't Know
+        - label: "Forge"
+        - label: "NeoForge"
+        - label: "Fabric"
+        - label: "Quilt"
+        - label: "Other / Don't Know"
     validations:
       required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "What environment are you running the mod in?"
+      options:
+        - "Client"
+        - "Dedicated Server"
+        - "LAN"
+        - "All"
+        - "Don't Know / Not Applicable"
+    validations:
+      required: true
+
   - type: textarea
     id: issue_description
     attributes:
-      label: Issue Description
-      description: "Please describe the issue you are experiencing. If possible including a step by step guide that can be used to recreate your issue."
+      label: "Issue Description"
+      description: "Please describe the issue you are experiencing the best you can."
     validations:
       required: true
