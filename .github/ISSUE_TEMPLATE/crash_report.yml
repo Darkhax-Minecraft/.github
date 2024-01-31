@@ -50,6 +50,8 @@ body:
         - "LAN"
         - "All"
         - "Don't Know / Not Applicable"
+    validations:
+      required: true
 
   - type: textarea
     id: issue_description
