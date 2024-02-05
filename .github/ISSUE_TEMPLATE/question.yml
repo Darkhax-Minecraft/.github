@@ -1,0 +1,24 @@
+name: "❓ Question"
+description: "Ask us a question about the project."
+title: "[QUESTION] <title>"
+labels: ["question"]
+
+body:
+
+  - type: markdown
+    label: introduction
+    attributes:
+      value: |
+        Thank you for your interest in this project. Please keep the following in mind when asking your question.
+        
+        - This project is provided for free and help is provided on a volunteer basis. It may take days or even weeks for someone to respond.
+        - Include all relevant information with your question. For example if you're asking how an item works include what version of Minecraft you are playing.
+        - Please do **NOT** ask for ETAs or about porting/backporting mods. Stuff will only be released when it is ready.
+
+  - type: textarea
+    id: feedback_description
+    attributes:
+      label: "Question"
+      description: "What is your question?"
+    validations:
+      required: true
