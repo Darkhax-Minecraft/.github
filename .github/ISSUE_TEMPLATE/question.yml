@@ -6,7 +6,7 @@ labels: ["question"]
 body:
 
   - type: markdown
-    label: introduction
+    id: introduction
     attributes:
       value: |
         Thank you for your interest in this project. Please keep the following in mind when asking your question.
