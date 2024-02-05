@@ -1,7 +1,7 @@
 name: "⭐ Feedback"
 description: "Share an idea for a new feature or change to existing content."
 title: "[FEEDBACK] <title>"
-labels: ["enhancement"]
+labels: ["feedback"]
 
 body:
 
