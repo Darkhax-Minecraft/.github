@@ -1,7 +1,7 @@
 name: "💥 Crash Report"
 description: "Let us know about a crash so we can fix it!"
 title: "[CRASH] <title>"
-labels: ["bug", "crash"]
+labels: ["bug", "crash", "unverified"]
 
 body:
   - type: markdown
