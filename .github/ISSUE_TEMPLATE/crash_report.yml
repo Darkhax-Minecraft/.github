@@ -1,0 +1,76 @@
+name: "💥 Crash Report"
+description: "Let us know about a crash so we can fix it!"
+title: "[CRASH] <title>"
+labels: ["bug", "crash", "unverified"]
+
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for taking the time to report this crash. Before you submit this we ask you make a reasonable effort to check if someone else has already submitted the same crash. Additionally, please keep in mind that this project is provided for free and any support you receive is offered by volunteers. It may take a few days or even weeks to receive a response. Support may be denied if you are being rude, impatient, or demanding."
+
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: "Minecraft Version"
+      description: "What version of Minecraft are you using?"
+      placeholder: "Example: 1.18.2"
+    validations:
+      required: true
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: "Mod Version"
+      description: "What version of the mod are you using?"
+      placeholder: "Example: 1.0.2"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: mod_loader
+    attributes:
+      label: "Mod Loaders"
+      description: "What mod loader are you using?"
+      options:
+        - label: "Forge"
+        - label: "NeoForge"
+        - label: "Fabric"
+        - label: "Quilt"
+        - label: "Other / Don't Know"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "What environment are you running the mod in?"
+      options:
+        - "Client"
+        - "Dedicated Server"
+        - "LAN"
+        - "All"
+        - "Don't Know / Not Applicable"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: "Issue Description"
+      description: "Please describe what happened leading up to the crash. For example if the game crashed after right clicking an item please mention that."
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash_log
+    attributes:
+      label: "Crash Log"
+      description: "Write or upload your crash log here. A crash log is always generated, even if you can't immediately find it."
+    validations:
+      required: true
+
+  - type: textarea
+    id: nonstandard_changes
+    attributes:
+      label: "Are you doing anything weird?"
+      description: "If you are doing anything that may be weird or out of the ordinary please let us know. Some examples of weird behaviour include running the mod in a developer environment, using a fork or unofficial version of the mod, running the mod with an unsupported mod loader, or anything else the average user would not be doing."
