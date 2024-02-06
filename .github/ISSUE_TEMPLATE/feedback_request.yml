@@ -19,17 +19,17 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: mod_loader
     attributes:
-      label: "Mod Loaders"
+      label: "Mod Loader"
       description: "What mod loader are you using?"
       options:
-        - label: "Forge"
-        - label: "NeoForge"
-        - label: "Fabric"
-        - label: "Quilt"
-        - label: "Other / Don't Know"
+        - "Forge"
+        - "NeoForge"
+        - "Fabric"
+        - "Quilt"
+        - "Other / Don't Know"
     validations:
       required: true
 
